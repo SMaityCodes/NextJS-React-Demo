@@ -22,6 +22,21 @@ The app will be hosted. See it and test it first.
 - C-WASM Page: how to use a C/C++ program for performing some computataion at the Client-Side
 - Download Page: how to download the result of some computataion as a file in required format 
 
+
+##  Notes:-
+
+- 'app' is the root directory
+- only C-wasm related JS and the WASM files are inside the 'public' dir (not inside app)
+- In ButtonDemo2 the button facility has been designed (only the button related facilities) as client component
+  - rest of the page is server component
+  - the button component calls an server-API which is kept inside the 'route.js' file in 'api' folder
+- data-fetching using external API and from local (stored on server) JSON file: necessary JS programs are all inside the 'datafetching' folder
+  - these are standalone ordinary JS programs (defininf the necessary functions)
+  - not server-APIs
+  - not components
+  
+
+
 ## How to Setup a New NextJS Project?
 
 npx create-next-app@latest my-app
